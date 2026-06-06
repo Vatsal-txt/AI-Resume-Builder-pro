@@ -1,0 +1,20 @@
+/* ─────────────────────────────────────────────────────────────
+   AI Resume Builder — Tailwind CSS Entry Point
+   ───────────────────────────────────────────────────────────── */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* Smooth focus transition */
+* { transition-property: border-color, box-shadow; transition-duration: 150ms; }
+
+/* Spinning animation for AI button */
+@keyframes spin { to { transform: rotate(360deg); } }
+.animate-spin { animation: spin 0.8s linear infinite; }
